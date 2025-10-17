@@ -41,15 +41,19 @@
 .atmo-img {
   width: 100%;
   height: 380px;
-  /* border-radius: 50px; */
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   object-fit: cover;
-  /* clip-path: path(
-    "M0,50 Q50,0 100,50 T200,50 T300,50 T400,50 V400 H0 Z"
-  ); */
+  image-rendering: -webkit-optimize-contrast; /* Chrome/Safari ke liye */
+  image-rendering: crisp-edges; /* Firefox ke liye */
+  image-rendering: high-quality;
+  filter: none;
+  transform: translateZ(0); /* rendering smooth banata hai */
   transition: transform 0.3s ease;
+  backface-visibility: hidden;
+  margin-top: 70px;
 }
+
 
 .atmo-img:hover {
   transform: scale(1.05);
@@ -59,16 +63,17 @@
 .chill-text {
   color: #192b77;
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  margin-bottom: 4rem;
+  font-size: 4rem;
+  margin-top: 4rem;
+  font-style: italic;
 }
 
 /* Bottom wave */
 .bottom-wave-section {
   background-color: #b9d9ff;
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 90px;
+  padding-bottom: 120px;
 }
 
 .wave-bottom {

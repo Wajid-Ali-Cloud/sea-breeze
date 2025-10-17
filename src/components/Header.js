@@ -17,7 +17,9 @@ export default function Header() {
       <div className="header-container">
         {/* Left Logo */}
         <div className="logo">
-          <img src="/images/logo-text.png" alt="Sea Breeze" />
+          <a href="/">
+            <img src="/images/Wordmark_White.svg" alt="Sea Breeze" />
+          </a>
         </div>
 
         {/* Desktop Nav */}
@@ -35,6 +37,12 @@ export default function Header() {
             to="/reserve"
             onClick={() => setMenuOpen(false)}
             className="reserve-fish"
+            style={{
+              backgroundImage: `url("/images/White-fish.svg")`,
+              // backgroundSize: "70%",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
           >
             RESERVE
           </NavLink>

@@ -18,10 +18,11 @@
 
 /* Container spacing */
 .menu-container {
-  margin-top: 150px;
+  margin-top: 190px;
   margin-bottom: 80px;
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 
 /* Menu Items */
@@ -40,11 +41,11 @@
 }
 
 .menu-title {
-  margin-top: 0.6rem;
   font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
   color: #192b77;
+  font-style: italic;
 }
 
 /* Bottom Wave Section */
@@ -53,6 +54,7 @@
   position: relative;
   padding-top: 60px;
   padding-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .wave-bottom {
@@ -72,8 +74,10 @@
 .bottom-content h2 {
   color: #192b77;
   font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  margin-top: 8rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 /* Fish button */
@@ -113,3 +117,33 @@
     font-size: 0.9rem;
   }
 }
+.menu-bottom-wave {
+  background-color: #b9d9ff;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  transform: rotate(180deg);
+  margin-top: 250px;
+}
+
+
+
+

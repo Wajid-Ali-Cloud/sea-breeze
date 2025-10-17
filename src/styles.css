@@ -15,7 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 110px;
+  height: 170px;
   display: block;
 }
 
@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1.5rem;
   height: 100%;
@@ -59,12 +59,37 @@
 
 /* Fish-shaped RESERVE button */
 .reserve-fish {
-  background-color: #ffffff;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Background image styling */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Text styling */
   color: #192b77 !important;
-  padding: 0.6rem 1.4rem;
-  border-radius: 100%;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 0.9rem;
+
+  
+
+  /* Shape & layout */
+  border: none;
+  padding: 2.5rem 2rem; /* adjust size based on SVG shape */
+  text-decoration: none;
+  background-color: transparent; /* explicitly no color */
+
+  /* Optional hover animation */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.reserve-fish:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 /* ---------------- MOBILE MENU ---------------- */
@@ -129,17 +154,82 @@
   }
 }
 
-/* ---------------- HOME HERO ---------------- */
+/* ---------------- GENERAL ---------------- */
 .home-page {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
   position: relative;
-  min-height: 90vh;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  position: relative;
+  background-color: #2c2e83;
+  height: 120px;
   overflow: hidden;
 }
 
-.home-hero {
+.navbar-inner {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  height: 100px;
+}
+
+.logo img {
+  height: 240px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links li:hover {
+  opacity: 0.8;
+}
+
+.nav-links .reserve {
+  display: flex;
+  align-items: center;
+  background: white;
+  color: #2c2e83;
+  border-radius: 50px;
+  padding: 8px 22px;
+  font-weight: 600;
+}
+
+.nav-links .reserve img {
+  width: 28px;
+  margin-left: 10px;
+}
+
+/* ---------------- WAVE SHAPE ---------------- */
+.wave-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero-section {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: calc(100vh - 120px);
 }
 
 .hero-bg {
@@ -150,17 +240,17 @@
 
 .hero-logo {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .hero-logo img {
-  width: 300px;
+  width: 940px;
   max-width: 80%;
   opacity: 0.9;
 }
+
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
@@ -197,4 +287,171 @@
   height: 32px;
   object-fit: contain;
   margin-bottom: 0.3rem;
+}
+
+
+
+.home-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔹 Black overlay with transparency */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* adjust opacity as needed */
+}
+
+/* ================================
+   Reserve Page Styling
+   ================================ */
+.reserve-page {
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 100px;
+  background-color: #ffffff;
+  font-family: "Cinzel Decorative", serif;
+}
+
+/* Heading (Reserve your table now:) */
+.reserve-heading {
+  color: #1d2a6b;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+
+
+/* Table Illustration */
+.table-illustration img {
+  display: block;
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+}
+
+/* Optional: make whole section look balanced on page */
+@media (min-width: 768px) {
+  .reserve-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.reserve-fish-blue {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Background image styling */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Text styling */
+  color: #ffffff !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+
+  
+
+  /* Shape & layout */
+  border: none;
+  padding: 2.5rem 3rem; /* adjust size based on SVG shape */
+  text-decoration: none;
+  background-color: transparent; /* explicitly no color */
+
+  /* Optional hover animation */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.reserve-fish-blue:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+
+
+
+
+/* footer */
+.contact-page {
+  font-family: 'Playfair Display', serif;
+  background-color: #b9d9ff;
+  text-align: center;
+  color: #1a237e;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.contact-title {
+  font-size: 2.5em;
+  margin-top: 40px;
+}
+
+.contact-illustration {
+  width: 380px;
+  margin: 20px auto;
+  margin-top: 80px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+/* Decorative wave styles - you can replace these with actual SVGs for better accuracy */
+
+
+.wave-bottom {
+  margin-top: -20px;
+}
+
+/* Footer styling */
+.contact-footer {
+  font-size: 0.8em;
+  color: #0d47a1;
+  padding: 20px;
+}
+
+.site-footer{
+  padding-top: 70px;
+  color: #0d47a1; /* Deep blue */
+  font-size: 0.9em;
+  font-weight: 500;
 }

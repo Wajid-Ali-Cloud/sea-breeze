@@ -1,25 +1,27 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Reserve() {
   return (
-    <div className="page container">
-      <h1>RESERVE</h1>
-      <p>Reserve your table now:</p>
-      <form className="reserve-form" onSubmit={(e)=>e.preventDefault()}>
-        <label>
-          Name
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Date & Time
-          <input type="datetime-local" name="datetime" />
-        </label>
-        <label>
-          Guests
-          <input type="number" name="guests" min="1" defaultValue="2" />
-        </label>
-        <button className="btn">Reserve</button>
-      </form>
+    <div className="reserve-page">
+      <h2 className="reserve-heading">Reserve your table now:</h2>
+
+      <NavLink
+        to="/"
+        className="reserve-fish-blue"
+        style={{
+          backgroundImage: `url("/images/Blue-fish.svg")`,
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        RESERVE
+      </NavLink>
+
+      <div className="table-illustration">
+        <img src="/images/table.jpg" alt="Table illustration" />
+      </div>
     </div>
   );
 }
