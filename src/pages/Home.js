@@ -8,7 +8,7 @@ export default function Home() {
   const heroImages = [
     "/images/hero.jpg",
     "/images/our_Experience.jpeg",
-    "/images/our_menu.jpg",
+    "/images/our_menu.jpeg",
     "/images/event_1.jpeg",
   ];
 
