@@ -123,7 +123,7 @@ span {
 
 .nav-links a {
   color: #ffffff;
-  font-weight: 600;
+  /* font-weight: 600; */
   text-decoration: none;
   letter-spacing: 0.5px;
   transition: opacity 0.2s;
@@ -154,6 +154,30 @@ span {
 }
 
 .reserve-fish:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.reserve-fish-blue {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border: none;
+  padding: 2.5rem 2rem;
+  background-color: transparent;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  font-family: "Raleway", sans-serif;
+}
+
+.reserve-fish-blue:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
 }
@@ -203,6 +227,11 @@ span {
   }
 
   .reserve-fish {
+    margin-top: 0.5rem;
+    width: 60%;
+  }
+
+  .reserve-fish-blue {
     margin-top: 0.5rem;
     width: 60%;
   }

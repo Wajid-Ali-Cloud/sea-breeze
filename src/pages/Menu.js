@@ -72,6 +72,7 @@ export default function Menu() {
               backgroundSize: "contain",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
+              
             }}
           >
             Menu
