@@ -98,7 +98,7 @@ export default function Footer() {
           <div className="footer-links d-flex justify-content-center gap-4 flex-wrap">
             <a href="#">ABOUT</a>
             <a href="#">RESERVATION</a>
-            <a href="#">CONTACT</a>
+            <a href="/contact">CONTACT</a>
             <a href="#">PRIVACY</a>
             <a href="#">POLICY</a>
           </div>

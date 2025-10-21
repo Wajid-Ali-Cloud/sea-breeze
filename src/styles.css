@@ -239,11 +239,11 @@ span {
 
 @media (max-width: 600px) {
   .logo img {
-    height: 45px;
+    height: 145px;
   }
-  .wave-bg {
+  /* .wave-bg {
     height: 90px;
-  }
+  } */
 }
 
 /* =========================================
@@ -428,6 +428,10 @@ li {
 
   .nav-links {
     gap: 1rem;
+  }
+
+  .hero-logo {
+    left: 52%;
   }
 
   .hero-logo img {
