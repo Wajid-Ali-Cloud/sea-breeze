@@ -41,8 +41,8 @@
 }
 
 .menu-title {
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
+  /* font-family: "Playfair Display", serif; */
+  /* font-weight: 600; */
   font-size: 1.2rem;
   color: #192b77;
   font-style: italic;
@@ -73,11 +73,11 @@
 
 .bottom-content h2 {
   color: #192b77;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-size: 2.8rem;
   margin-top: 8rem;
   font-style: italic;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /* Fish button */

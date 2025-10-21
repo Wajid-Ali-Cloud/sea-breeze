@@ -21,6 +21,7 @@ export default function App() {
           <Route path="/reserve" element={<Reserve />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }

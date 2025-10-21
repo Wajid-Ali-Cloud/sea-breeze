@@ -1,4 +1,81 @@
-/* ---------------- WAVE HEADER ---------------- */
+/* =========================================
+   FONT IMPORTS
+========================================= */
+@font-face {
+  font-family: "Frastha";
+  src: url("/public/fonts/Frastha-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Frastha";
+  src: url("/public/fonts/Frastha-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Frastha";
+  src: url("/public/fonts/Frastha-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Frastha";
+  src: url("/public/fonts/Frastha-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/public/fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/public/fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/public/fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================
+   GLOBAL BASE STYLES
+========================================= */
+body {
+  font-family: "Frastha", serif;
+  color: #1a237e;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Frastha", serif;
+}
+
+/* =========================================
+   HEADER (Raleway)
+========================================= */
 .wave-header {
   position: fixed;
   top: 0;
@@ -7,9 +84,9 @@
   z-index: 100;
   overflow: visible;
   height: 110px;
+  font-family: "Raleway", sans-serif;
 }
 
-/* SVG wave full width */
 .wave-bg {
   position: absolute;
   top: 0;
@@ -19,7 +96,6 @@
   display: block;
 }
 
-/* Header inner container */
 .header-container {
   position: relative;
   z-index: 2;
@@ -32,13 +108,12 @@
   height: 100%;
 }
 
-/* Logo */
 .logo img {
   height: 180px;
   width: auto;
 }
 
-/* Nav links */
+/* Nav Links */
 .nav-links {
   display: flex;
   align-items: center;
@@ -75,6 +150,7 @@
   padding: 2.5rem 2rem;
   background-color: transparent;
   transition: transform 0.3s ease, filter 0.3s ease;
+  font-family: "Raleway", sans-serif;
 }
 
 .reserve-fish:hover {
@@ -82,7 +158,7 @@
   filter: brightness(1.1);
 }
 
-/* ---------------- MOBILE MENU ---------------- */
+/* Mobile Menu */
 .menu-toggle {
   display: none;
   background: none;
@@ -93,7 +169,6 @@
   z-index: 3;
 }
 
-/* Responsive Navigation */
 @media (max-width: 900px) {
   .menu-toggle {
     display: block;
@@ -142,14 +217,9 @@
   }
 }
 
-/* ---------------- GENERAL ---------------- */
-.home-page {
-  font-family: "Poppins", sans-serif;
-  overflow: hidden;
-  position: relative;
-}
-
-/* ---------------- HERO SECTION ---------------- */
+/* =========================================
+   HERO SECTION
+========================================= */
 .home-hero {
   position: relative;
   width: 100%;
@@ -172,7 +242,6 @@
   transform: scale(1);
 }
 
-/* Black overlay */
 .overlay {
   position: absolute;
   inset: 0;
@@ -180,7 +249,6 @@
   z-index: 2;
 }
 
-/* Centered logo */
 .hero-logo {
   position: absolute;
   top: 50%;
@@ -213,9 +281,11 @@
   }
 }
 
-/* ---------------- CONTACT PAGE ---------------- */
+/* =========================================
+   CONTACT PAGE
+========================================= */
 .contact-page {
-  font-family: "Playfair Display", serif;
+  font-family: "Frastha", serif;
   background-color: #b9d9ff;
   text-align: center;
   color: #1a237e;
@@ -255,15 +325,18 @@
   font-size: 0.8em;
   color: #0d47a1;
   padding: 20px;
+  font-family: "Raleway", sans-serif;
 }
 
-/* ---------------- RESERVE PAGE ---------------- */
+/* =========================================
+   RESERVE PAGE
+========================================= */
 .reserve-page {
   text-align: center;
   padding: 60px 20px;
   margin-top: 100px;
   background-color: #ffffff;
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Frastha", serif;
 }
 
 .reserve-heading {
@@ -276,22 +349,9 @@
   font-style: italic;
 }
 
-.table-illustration img {
-  display: block;
-  margin: 0 auto;
-  max-width: 550px;
-  width: 100%;
-}
-
-/* ---------------- FOOTER ---------------- */
-.site-footer {
-  padding-top: 70px;
-  color: #0d47a1;
-  font-size: 0.9em;
-  font-weight: 500;
-}
-
-/* ---------------- BACKGROUND IMAGES ---------------- */
+/* =========================================
+   BACKGROUND IMAGES
+========================================= */
 .experience-image-bg-1 {
   background: url("../public/images/our_Experience.jpeg") center/cover no-repeat;
 }
@@ -308,7 +368,30 @@
   background: url("../public/images/event_1.jpeg") center/cover no-repeat;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
+.sub-h {
+  font-size: 58px;
+}
+.sub-p {
+  /* font-size: 20px; */
+  font-weight: normal !important;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  /* font-size: 28px; */
+}
+
+.card-text {
+  font-family: "Raleway", sans-serif;
+}
+
+li {
+  font-size: 22px;
+}
+/* =========================================
+   RESPONSIVE
+========================================= */
 @media (max-width: 768px) {
   .header-container {
     padding: 0 1rem;
@@ -324,5 +407,137 @@
 
   .contact-illustration {
     width: 240px;
+  }
+}
+
+/* =========================================
+   Footer Section
+========================================= */
+.footer-section {
+  position: relative;
+  background: url("/public/images/our_menu.jpeg") center/cover no-repeat;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+
+/* Wave Top */
+.footer-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Black Overlay (Removed grey, added deep contrast) */
+.footer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75); /* pure black transparency */
+  z-index: 1;
+}
+
+/* Position all content above overlay */
+.footer-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Text & Headings */
+.footer-logo {
+  font-family: "Frastha", serif;
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+.footer-heading {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-text {
+  font-family: "Frastha", serif;
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Links */
+.footer-link {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 2px solid #f97300;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #f97300;
+}
+
+/* Buttons */
+.footer-btn {
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #fff;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-filled {
+  background-color: #f97300;
+  border: none;
+  color: #fff;
+}
+
+.btn-filled:hover {
+  filter: brightness(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  color: #fff;
+}
+
+.footer-links a {
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f97300;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .footer-section .row {
+    text-align: center;
+  }
+
+  .footer-btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    gap: 1rem;
   }
 }

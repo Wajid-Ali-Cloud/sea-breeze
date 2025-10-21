@@ -22,7 +22,9 @@ function Events() {
                 data-aos-duration="600"
                 data-aos-delay="200"
               >
-                <b>An Ideal Private Event Venue</b>
+                {/* <b> */}
+                An Ideal Private Event Venue
+                {/* </b> */}
               </p>
               <h2
                 className="card-title sub-h py-3"

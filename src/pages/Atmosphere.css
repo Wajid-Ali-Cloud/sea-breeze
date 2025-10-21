@@ -62,7 +62,7 @@
 /* Text */
 .chill-text {
   color: #192b77;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-size: 4rem;
   margin-top: 4rem;
   font-style: italic;

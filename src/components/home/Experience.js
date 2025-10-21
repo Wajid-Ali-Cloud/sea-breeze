@@ -16,7 +16,9 @@ function Experience() {
                 data-aos-duration="600"
                 data-aos-delay="200"
               >
-                <b>Fabulous taste journey</b>
+                {/* <b> */}
+                Fabulous taste journey
+                {/* </b> */}
               </p>
               <h2
                 className="card-title sub-h py-3"

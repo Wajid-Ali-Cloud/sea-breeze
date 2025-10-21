@@ -22,7 +22,9 @@ function OurStory() {
                 data-aos-duration="600"
                 data-aos-delay="200"
               >
-                <b>About PatioTime Seafood</b>
+                {/* <b> */}
+                About PatioTime Seafood
+                {/* </b> */}
               </p>
               <h2
                 className="card-title sub-h py-3"
