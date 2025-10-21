@@ -381,20 +381,94 @@ span {
 /* =========================================
    BACKGROUND IMAGES
 ========================================= */
+
+/* =============================
+   OUR STORY IMAGE FIX
+   ============================= */
+.our-story-image-bg-1 {
+  background: url("../public/images/our_story.jpeg") center/cover no-repeat;
+  /* height: 100%; */
+}
+
+/* Ensure both columns stretch evenly */
+.story-image-column {
+  display: flex;
+  align-items: stretch;
+}
+
 .experience-image-bg-1 {
   background: url("../public/images/our_Experience.jpeg") center/cover no-repeat;
 }
 
-.our-story-image-bg-1 {
-  background: url("../public/images/our_story.jpeg") center/cover no-repeat;
+.experience-image-column {
+  display: flex;
+  align-items: stretch;
 }
 
 .our-menu-image-bg-1 {
   background: url("../public/images/our_menu.jpeg") center/cover no-repeat;
 }
+.our-menu-image-column {
+  display: flex;
+  align-items: stretch;
+}
 
 .event-image-bg-1 {
   background: url("../public/images/event_1.jpeg") center/cover no-repeat;
+}
+
+.event-image-column {
+  display: flex;
+  align-items: stretch;
+}
+
+/* On mobile, make image fully visible and nicely scaled */
+@media (max-width: 768px) {
+  .our-story-image-bg-1 {
+    min-height: 400px; /* shorter for smaller screens */
+    width: 100%;
+    background-position: center;
+    /* border-bottom: 3px solid #ffffff20; */
+  }
+  .our-menu-image-bg-1 {
+    min-height: 400px; /* shorter for smaller screens */
+    width: 100%;
+    background-position: center;
+    /* border-bottom: 3px solid #ffffff20; */
+  }
+  .experience-image-bg-1 {
+    min-height: 400px; /* shorter for smaller screens */
+    width: 100%;
+    background-position: center;
+    /* border-bottom: 3px solid #ffffff20; */
+  }
+  .event-image-bg-1 {
+    min-height: 400px; /* shorter for smaller screens */
+    width: 100%;
+    background-position: center;
+    /* border-bottom: 3px solid #ffffff20; */
+  }
+
+  .text-column {
+    padding: 2rem 1.5rem !important;
+    text-align: center;
+  }
+
+  .our-story-section .card-body {
+    margin: 0 !important;
+  }
+  .our-menu-section .card-body {
+    margin: 0 !important;
+  }
+  .experience-section .card-body {
+    margin: 0 !important;
+  }
+  .event-section .card-body {
+    margin: 0 !important;
+  }
+  .card-body.m-5.mob-m-5 {
+    margin: 0 !important;
+  }
 }
 
 .sub-h {

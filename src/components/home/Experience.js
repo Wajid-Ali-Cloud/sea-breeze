@@ -8,7 +8,7 @@ function Experience() {
     <div>
       <div className="card">
         <div className="row g-0">
-          <div className="col-md-6 p-5">
+          <div className="col-md-6 col-12 p-5 text-column">
             <div className="card-body m-5 mob-m-5">
               <p
                 className="sub-p"
@@ -66,7 +66,7 @@ function Experience() {
             </div>
           </div>
           <div
-            className="col-md-6 experience-image-bg-1"
+            className="col-md-6 col-12 experience-image-bg-1 experience-image-column"
             data-aos="fade-right"
             data-aos-duration="900"
             data-aos-delay="300"
