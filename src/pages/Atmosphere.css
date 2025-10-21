@@ -3,7 +3,7 @@
   overflow: hidden;
   background-color: #fff;
   text-align: center;
-  min-height: 100vh;
+  height: 100%;
 }
 
 /* Top wave */
@@ -53,7 +53,6 @@
   backface-visibility: hidden;
   margin-top: 70px;
 }
-
 
 .atmo-img:hover {
   transform: scale(1.05);
