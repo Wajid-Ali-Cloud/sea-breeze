@@ -54,7 +54,7 @@ export default function Footer() {
             <p className="mb-1">Upper Level</p>
             <p className="mb-1">Shop 15, 5 Macquarie Street</p>
             <p className="mb-1">East Circular Quay, Sydney NSW 2000</p>
-            <p className="fw-semibold mt-2">Phone: (02) 5560 1200</p>
+            <p className="fw-semibold mt-2">Phone: +34 12345678</p>
             <a href="#" className="footer-link mt-2 d-inline-block">
               VIEW ON MAP
             </a>
